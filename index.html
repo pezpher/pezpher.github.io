@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christopher Lopez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        header {
+            padding: 1rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            margin: 0 auto;
+        }
+        nav {
+            margin-bottom: 2rem;
+        }
+        nav a {
+            margin-right: 1rem;
+            color: #333;
+            text-decoration: none;
+        }
+        nav a:hover {
+            color: #666;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        #projects, #contact {
+            display: none; 
+        }
+        @media (max-width: 600px) { 
+            #about pre {
+                white-space: pre-wrap; 
+                font-size: 14px;    
+            }
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div style="display: flex; align-items: center;">
+                <img src="https://raw.githubusercontent.com/pezpher/pezpher.github.io/main/profilePic.JPG" alt="Your Photo" style="max-width: 100px; height: 100px; margin-right: 20px; border-radius: 50%; object-fit: cover;"> 
+                <h1> Hey, I'm Christopher Lopez!</h1>
+            </div>
+        </header>
+
+        <nav>
+            <a href="#" onclick="showSection('about')">About</a>
+            <a href="#" onclick="showSection('projects')">Projects</a>
+        </nav>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm an economics graduate from CSUN with a passion for using Python to explore and analyze data. 
+                I was honored to receive a Certificate of Excellence from the Dean and Economics Department Chair, 
+                and I served as Vice President of the Python Coding in Economics club where I deepened my understanding 
+                of economic principles while simultaneously sharpening my coding skills. Currently, I'm diving deeper 
+                into computer science concepts and plan to pursue studies in applied mathematics and computer science. 
+                In my free time I enjoy playing poker, enough to call it a hobby, but not enough to call me a degenerate.
+            </p>
+            <h3>Links</h3>
+            <nav>
+              <a href="https://www.linkedin.com/in/christopherlopez-/" target="_blank">LinkedIn</a>
+              <a href="https://github.com/pezpher" target="_blank">GitHub</a>
+            </nav>
+        </section>
+
+        <section id="projects">
+            <h2>My Projects</h2>
+            <iframe src="https://drive.google.com/file/d/1kxdbq0kSVgw0NK_XIkTT4DvMpgSk0Du4/preview" allow="autoplay"></iframe> 
+        </section>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('projects').style.display = 'none';
+
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block'; 
+        }
+
+        // Show the about section by default
+        showSection('about'); 
+    </script>
+</body>
+</html>
