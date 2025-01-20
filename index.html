@@ -64,7 +64,8 @@
         <nav>
             <a href="#" onclick="showSection('about')">About</a>
             <a href="#" onclick="showSection('projects')">Projects</a>
-            <a href="#" onclick="showSection('resume')">Resume</a>    
+            <a href="#" onclick="showSection('resume')">Resume</a>
+            <a href="#" onclick="showSection('certificates')">Certificates</a>
         </nav>
 
         <section id="about">
@@ -91,8 +92,13 @@
 
         <section id="resume">
             <h2>Resume</h2> 
-            <iframe src="https://drive.google.com/file/d/1aZOR46gpm5N4rSpdnvnHE_trV6aTXeRx/preview" allow="autoplay"></iframe>
+            <iframe src="https://drive.google.com/file/d/1-jsCFy89yaW6yt3jJPlQcvvTMgLQalB-/preview" allow="autoplay"></iframe>
         </section>    
+
+        <section id="certificates">
+            <iframe src="https://coursera.org/share/61b4bb87bbaebe464c9279437ead1508" allow="autoplay"></iframe>
+            <h2>Certificates</h2>
+        
     </div>
 
     <script>
@@ -101,6 +107,7 @@
             document.getElementById('about').style.display = 'none';
             document.getElementById('projects').style.display = 'none';
             document.getElementById('resume').style.display = 'none';
+            document.getElementById('certificates').style.display='none';
 
             // Show the selected section
             document.getElementById(sectionId).style.display = 'block'; 
